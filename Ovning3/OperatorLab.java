@@ -16,12 +16,14 @@ public class OperatorLab
 
         boolean hasTicket = true; 
         boolean isAdult = false; 
-
+        double c = a;
+        double d = b;
         boolean allowed = hasTicket || isAdult;
         double div = 0;
-        div = a/b;
+        div = c/d;
         div = Math.round(div * 100.0) / 100.0;
         
+
         System.out.println(a + b); //Prints 13
         System.out.println(a - b); //Prints 7
         System.out.println(a * b); //Prints 30
