@@ -9,6 +9,8 @@ public class Main
     {
         Scanner sc = new Scanner(System.in);
         Book title1 = new Book();
+        Car myAudi = new Car("Audi", "TT", 2006, "Yellow");
+        Car myVolvo = new Car();
         
         System.out.println("This book has the title '" + title1.title + "' and it was published " + title1.myYear + ".");
 
@@ -20,7 +22,14 @@ public class Main
         double grade = sc.nextDouble();
 
         Student Emma = new Student(name, age, grade);
-        System.out.println("Hej" + Emma.name + Emma.age + Emma.grade);
+        System.out.println("Hej " + Emma.name + "! Du är " + Emma.age + " år och ditt betyg är " + Emma.grade + ".");
+
+        System.out.println(myVolvo.make + " " + myVolvo.model + " " + myVolvo.year + " " + myVolvo.color);
+        System.out.println(myAudi.make + " " + myAudi.model + " " + myAudi.year + " " + myAudi.color);
+        //System.out.println();
+        //System.out.println();
+
+        sc.close();
 
 
     }    
