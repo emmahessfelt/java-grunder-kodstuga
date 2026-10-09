@@ -13,7 +13,7 @@ public class Main
         while(true)
         {
             int damage = attack();
-             myMonsters.borg1.health -= damage; 
+            myMonsters.borg1.health -= damage; 
             System.out.println("Your monster is attacked. Your monster loses " + damage + " healthpoints.");
             System.out.println(myMonsters.borg1.name + " has " + myMonsters.borg1.health + " healthpoints left.");
             if (myMonsters.borg1.health < 1)
