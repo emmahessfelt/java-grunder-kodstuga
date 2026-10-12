@@ -6,16 +6,16 @@ public class Tamagothi
     {
         int i = 0;
         boolean hungry;
-        Pet Mimi = new Pet("Mimi", 10, 30);
+        Pet mimi = new Pet("Mimi", 10, 30);
 
         while(i < 10)
         {
-            hungry = Mimi.play();
+            hungry = mimi.play();
             i++;
-            Mimi.getPet();
+            mimi.getPet();
             if (hungry == true)
             {
-                Mimi.eat();
+                mimi.eat();
             }
         }
     }    
