@@ -38,8 +38,8 @@ public class Pet
             this.hunger += 2;
             if (this.energy < 10)
             {
-                System.out.println("I am tired. I am tired. I am tired.");
-                Toolkit.getDefaultToolkit().beep();                
+                Toolkit.getDefaultToolkit().beep();   
+                System.out.println("I am tired. I am tired. I am tired.");                             
             }           
         }
         else
