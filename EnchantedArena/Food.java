@@ -6,9 +6,13 @@ public class Food extends AllObjects
 
     Food(int healthBoost)
     {
-        this.healthBoost = healthBoost;
-        //this.placeRandomly(20);
+        this.healthBoost = healthBoost;        
         setMapChar('F');
+    }
+
+    public int getHealthBoost() 
+    {
+        return this.healthBoost;
     }
     
     

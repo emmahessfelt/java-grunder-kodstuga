@@ -7,9 +7,17 @@ public class Enemy extends AllObjects
     Enemy(int damage)
     {
         this.damage = damage;
-        setMapChar('E');
-        //this.placeRandomly(20);
+        setMapChar('E');    
+    }
 
-    } 
+    public int getDamage() 
+    {
+        return damage;
+    }
+
+
+    
+    
+    
    
 }

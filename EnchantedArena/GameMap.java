@@ -25,7 +25,7 @@ public class GameMap
 
     public boolean positionAvailable(int x, int y)
     {
-        if(gameMap[x][y] != 'X')
+        if(gameMap[y][x] != 'X')
         {
             return false;
         }
@@ -51,7 +51,13 @@ public class GameMap
 
     public void writeChar(int x, int y, char mapChar)
     {
-        gameMap[x][y] = mapChar;
+        gameMap[y][x] = mapChar;
+    }
+
+    public char getChar(int x, int y)
+    {
+        char mapChar = gameMap[y][x];
+        return mapChar;
     }
     
 }

@@ -9,7 +9,7 @@ public abstract class AllObjects implements GameObject
     private Random random = new Random();
 
     @Override
-    public void setPosition(int row, int column) 
+    public void setPosition(int column, int row) 
     {
         this.row = row;
         this.column = column;
@@ -43,15 +43,17 @@ public abstract class AllObjects implements GameObject
         int length = gameMap.getMapLength();
         this.row = random.nextInt(length); 
         this.column = random.nextInt(length); 
-        free = gameMap.positionAvailable(this.row, this.column);
+        free = gameMap.positionAvailable(this.column, this.row);
         
         if (free == false)
         {
             placeRandomly(gameMap);
         }                         
         
-        gameMap.writeChar(this.row, this.column, this.mapChar);
+        gameMap.writeChar(this.column, this.row, this.mapChar);
     }
+
+   
 
 
 }
