@@ -68,7 +68,7 @@ public class Application
 
         for (int i = 0; i < nofEnemies; i++)
         {
-            int randomDamage = r.nextInt(5);
+            int randomDamage = r.nextInt(1, 6);
             myEnemies[i] = new Enemy(randomDamage);
             myEnemies[i].placeRandomly(myMap);
         }
@@ -83,7 +83,7 @@ public class Application
 
         for (int i = 0; i < nofFoods; i++)
         {
-            int randomBoost = r.nextInt(4);
+            int randomBoost = r.nextInt(1, 5);
             myFoods[i] = new Food(randomBoost);
             myFoods[i].placeRandomly(myMap);
         } 
