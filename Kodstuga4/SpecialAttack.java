@@ -2,5 +2,5 @@ package Kodstuga4;
 
 public interface SpecialAttack 
 {
-    public void useSpecialAttack();
+    public void useSpecialAttack(Monster attackedMonster);
 }

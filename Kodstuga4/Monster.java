@@ -54,15 +54,13 @@ public abstract class Monster
         System.out.println("My name is " + name);
         System.out.println("I have " + healthPoints + " health points");
         System.out.println("I have " + gamePoints + " game points");
-    }
+    }    
 
-    
-
-    public int randomDamage()
+    public int randomDamage(int max)
     {
         int damage;
         Random r = new Random();
-        damage = r.nextInt(5, 20);
+        damage = r.nextInt(5, max);
         return damage;
     }
 

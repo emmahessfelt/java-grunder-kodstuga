@@ -11,7 +11,7 @@ public class Slime extends Monster
     public void attack(Monster attackedMonster)
     {
         int currentHP;
-        int damage = randomDamage();        
+        int damage = randomDamage(20);        
         currentHP = attackedMonster.getHealthPoints();
         attackedMonster.setHealthPoints(currentHP - damage);
     }
