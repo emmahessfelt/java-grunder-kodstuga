@@ -56,6 +56,8 @@ public abstract class Monster
         System.out.println("I have " + gamePoints + " game points");
     }
 
+    
+
     public int randomDamage()
     {
         int damage;
