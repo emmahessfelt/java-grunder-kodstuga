@@ -1,15 +1,16 @@
 package Kodstuga4;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.Random;
-import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
+//import java.util.Map;
+//import java.util.HashSet;
+//import java.util.Set;
 
-public abstract class Monster 
+public abstract class Monster implements Comparable<Monster>
 {
     private String name;
     private int healthPoints;
     private int gamePoints;
+    
 
     public abstract void attack(Monster myMonster);
 
@@ -17,6 +18,12 @@ public abstract class Monster
     {
         healthPoints = 100;
         gamePoints = 0;
+    }
+
+    @Override 
+    public int compareTo(Monster other)
+    {
+        return Integer.compare(other.getGamePoints(), this.getGamePoints());
     }
 
     public String getName() 
@@ -62,6 +69,18 @@ public abstract class Monster
         Random r = new Random();
         damage = r.nextInt(5, max);
         return damage;
+    }
+
+    public boolean isAlive()
+    {
+        if (this.healthPoints <= 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     
