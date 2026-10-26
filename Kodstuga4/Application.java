@@ -20,15 +20,7 @@ public class Application
     {
         Scanner sc = new Scanner(System.in);
         boolean gameover = false;
-        List<Monster> myMonsterArena = createMonsters();
-        //myMonsterArena.get(0).setGamePoints(5);
-        //myMonsterArena.get(1).setGamePoints(12);
-        //myMonsterArena.get(2).setGamePoints(2);
-        //Map<String, Integer> myLeaderBoard = new TreeMap<>();
-        //List<Monster> shuffledArena = new ArrayList<>();
-        //Set<Monster> monsterTypes = new HashSet<>();
-        //shuffledArena = shuffleMonsters(myMonsterArena);
-        //Queue<Monster> attackQueue = attackQueue(shuffledArena);        
+        List<Monster> myMonsterArena = createMonsters();           
         Menu.createMenu();       
         
         while(gameover == false)
