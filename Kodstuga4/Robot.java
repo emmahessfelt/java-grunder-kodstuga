@@ -4,9 +4,10 @@ public class Robot extends Monster implements SpecialAttack
 {
     Robot(String name)
     {
-        this.setName(name);        
-    }
-    
+        this.setName(name); 
+        
+    }    
+
     @Override
     public void attack(Monster attackedMonster) 
     {
@@ -24,4 +25,6 @@ public class Robot extends Monster implements SpecialAttack
         currentHP = attackedMonster.getHealthPoints();
         attackedMonster.setHealthPoints(currentHP - damage);
     }
+
+    
 }

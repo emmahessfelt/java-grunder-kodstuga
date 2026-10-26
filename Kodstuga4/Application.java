@@ -135,7 +135,8 @@ public class Application
         //Create attack queue
         Queue<Monster> attackQueue = attackQueue(shuffleMonsters(myMonsterArena)); 
         System.out.println("Our first contestant is: " + attackQueue.peek().getName());
-        Monster participant1 = attackQueue.poll();             
+        Monster participant1 = attackQueue.poll();   
+       
 
         System.out.println("And the opponant is: " + attackQueue.peek().getName());
         Monster participant2 = attackQueue.poll();
@@ -146,7 +147,7 @@ public class Application
 
         while(participant1.isAlive() && participant2.isAlive())
         {
-            Collections.shuffle(contestors);
+            Collections.shuffle(contestors);      
             contestors.get(0).attack(contestors.get(1));
             System.out.println(contestors.get(0).getName() + " attacks " + contestors.get(1).getName()); 
             System.out.println("HP1 " + contestors.get(0).getHealthPoints() + " HP2 " + contestors.get(1).getHealthPoints());  

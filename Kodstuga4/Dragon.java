@@ -2,10 +2,12 @@ package Kodstuga4;
 
 public class Dragon extends Monster implements SpecialAttack
 {
-        
+    
+    
     Dragon(String name)
     {
-       this.setName(name);       
+       this.setName(name);      
+       
     }
     
     @Override 

@@ -11,6 +11,7 @@ public abstract class Monster implements Comparable<Monster>
     private int healthPoints;
     private int gamePoints;
     
+    
 
     public abstract void attack(Monster myMonster);
 
@@ -18,7 +19,10 @@ public abstract class Monster implements Comparable<Monster>
     {
         healthPoints = 100;
         gamePoints = 0;
+        
     }
+
+    
 
     @Override 
     public int compareTo(Monster other)
@@ -81,9 +85,7 @@ public abstract class Monster implements Comparable<Monster>
         {
             return true;
         }
-    }
-
-    
+    }  
 
     
 
