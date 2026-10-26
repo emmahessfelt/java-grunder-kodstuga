@@ -18,6 +18,16 @@ public class Candy
         this("Skum", "rhubarb", 2.50);
     }
 
+    
+
+    public String getTaste() {
+        return taste;
+    }
+
+    public void setTaste(String taste) {
+        this.taste = taste;
+    }
+
     public String getTypeOfCandy(Candy myCandy)
     {
         return myCandy.typeOfCandy;

@@ -19,6 +19,32 @@ public class Robot
         this("Maxine", 80);
     }
 
+    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBatteryStatus() {
+        return batteryStatus;
+    }
+
+    public void setBatteryStatus(int batteryStatus) {
+        this.batteryStatus = batteryStatus;
+    }
+
+    public int getFavoriteNumber() {
+        return favoriteNumber;
+    }
+
+    public void setFavoriteNumber(int favoriteNumber) {
+        this.favoriteNumber = favoriteNumber;
+    }
+
     private int generateNumber()
     {
         Random r = new Random();

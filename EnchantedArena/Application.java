@@ -1,7 +1,7 @@
 package EnchantedArena;
 
-import java.security.AllPermission;
-import java.util.Arrays;
+//import java.security.AllPermission;
+//import java.util.Arrays;
 import java.util.Random;
 
 public class Application 

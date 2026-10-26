@@ -19,6 +19,32 @@ public class Pet
         this("Momo", 10, 100);
     }
 
+    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHunger() {
+        return hunger;
+    }
+
+    public void setHunger(int hunger) {
+        this.hunger = hunger;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int energy) {
+        this.energy = energy;
+    }
+
     public void getPet()
     {
         System.out.println("Hunger: " + this.hunger + " Energy: " + this.energy);

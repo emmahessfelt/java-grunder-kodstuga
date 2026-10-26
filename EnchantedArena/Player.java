@@ -46,7 +46,8 @@ public class Player extends AllObjects implements Movable
         int x = this.getColumn();
         int y = this.getRow();    
         this.moving(x, y, myMap); 
-        action = this.checkPosition(myMap);    
+        action = this.checkPosition(myMap); 
+        sc.close();   
         return action;     
         
     }

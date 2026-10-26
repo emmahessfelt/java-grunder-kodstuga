@@ -6,7 +6,7 @@ public class Main
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        Robot myRobot = new Robot("Matilda Järndotter", 35);  
+        //Robot myRobot = new Robot("Matilda Järndotter", 35);  
         
         SuperHero myHero = new SuperHero(354, 250, 400);
         
