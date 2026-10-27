@@ -3,7 +3,8 @@ package CleanCodeSpicy;
 public enum Surcharges 
 {
     DISTANCE(8), 
-    DANGER(50);
+    DANGER(50),
+    DANGERDAMAGE(20);
 
     private int mulitplier;
     

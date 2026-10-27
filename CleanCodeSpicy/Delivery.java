@@ -27,7 +27,7 @@ public class Delivery
     public int calculateTotalPrice()
     {
         int totalPrice = this.distance * Surcharges.DISTANCE.getMultiplier();
-        
+
         if (this.dangerOnTheRoad)
         {
             totalPrice += Surcharges.DANGER.getMultiplier();
@@ -36,6 +36,14 @@ public class Delivery
         totalPrice += this.tip;
 
         return totalPrice;        
+    }
+
+    public void damageIfDanger(Player player)
+    {
+        if (this.dangerOnTheRoad == true)
+        {
+            player.takeDamage(Surcharges.DANGERDAMAGE.getMultiplier());
+        }
     }
 
     public void printDeliverySummary(Player player)
