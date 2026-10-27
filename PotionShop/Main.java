@@ -1,7 +1,5 @@
 package PotionShop;
 
-
-
 public class Main 
 {
     private static final int POTIONPRICE = 30;

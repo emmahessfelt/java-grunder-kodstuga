@@ -65,8 +65,8 @@ public class Player
 
     public void printStatus()
     {
-        System.out.println("I am a player. My name is " + name);
-        System.out.println("I have " + health + "healthpoins.");
+        System.out.println("I am a player. My name is " + name + ".");
+        System.out.println("I have " + health + " healthpoins.");
         System.out.println("In my wallet I have " + wallet + " coins.");
     }
 }
