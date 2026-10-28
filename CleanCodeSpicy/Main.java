@@ -19,8 +19,7 @@ public class Main
     public static void deliver(Player player, Delivery delivery)
     {
         int totalDeliveryPrice = delivery.calculateTotalPrice();
-        
-        //a dangerous delivery
+                
         if(player.canPlayerAffordDelivery(totalDeliveryPrice))
         {
             //pay and deliver
